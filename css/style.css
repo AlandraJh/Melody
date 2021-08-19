@@ -104,6 +104,10 @@ body {
     cursor: pointer;
 }
 
+path.current-floor {
+    opacity: 1;
+}
+
 .main-title {
     margin: 0;
     font-family:"Bebas Neue", sans-serif;
