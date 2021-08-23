@@ -15,13 +15,6 @@ $(document).ready(function () {
         $(".counter").text(currentFloor); /*Запись в счетчик*/
     });
 
-    /*Открытие-закрытие окна при клике на этаж*/
-    floorPath.on("click", toggleModal);
-
- /*Открытие-закрытие окна при клике на кнопку "Показать квартиры"*/
-        showFlatBtn.on("click",toggleModal); 
-        closeBtn.on("click",toggleModal);
-
  /*Событие при клике на верхнюю кнопку*/
     counterUp.on("click", function(){
         if (currentFloor < 18) {
@@ -44,6 +37,14 @@ $(document).ready(function () {
             
         }   
     });
+
+      /*Открытие-закрытие окна при клике на этаж*/
+      floorPath.on("click", toggleModal);
+
+      /*Открытие-закрытие окна при клике на кнопку "Показать квартиры"*/
+             showFlatBtn.on("click",toggleModal); 
+             closeBtn.on("click",toggleModal);
+             
 // Функция открытия-закрытия окна
     function toggleModal () {
         modal.toggleClass("modal-show");
