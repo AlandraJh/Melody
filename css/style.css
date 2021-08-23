@@ -19,8 +19,6 @@ body {
 
 .header {
     background-color: #635854;
-    padding-top: 12px;
-    padding-bottom: 12px;
     border-bottom: 4px solid #3596F5;
 }
 
@@ -42,9 +40,12 @@ body {
 }
 
 .navbar-item {
-    margin-left: 40px;
-    margin-right: 40px;
-    
+    padding: 16px;
+    margin: 0px 40px;       
+}
+
+.navbar-item:hover {
+    background-color: #3596F5;
 }
 
 .navbar-link {
@@ -77,6 +78,7 @@ body {
     margin: auto;
     padding-top: 54px;
     display: flex;
+    padding-bottom: 99px;
 }
 
 .floor-selection {
@@ -288,4 +290,151 @@ margin-top: 56px;
     border: none;
     background-color: #ffffff;
     cursor: pointer;
+}
+
+/* Подвал */
+
+.main-footer {
+    background-color: #D7D7D7;
+    border-top: 4px solid #3596F5;
+}
+
+.footer-nav {
+    min-height: 171px;
+    max-width: 1280px;
+    margin: auto;
+    display: flex;
+    justify-content: left;
+    
+}
+
+.builder-logo {
+    margin-top: 50px;
+}
+
+.footer-contacts {
+    text-align: left;
+    margin-left: 37px;
+    margin-top: 62px;
+}
+
+.footer-text{
+    display: block;
+    font-size: 14px;
+    line-height: 16px;
+    color:#635854;
+    margin-bottom: 4px;
+
+}
+
+.footer-phone {
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 20px;
+    text-decoration: none;
+    color: #635854;
+}
+
+.footer-social {
+    margin-top: 73px; 
+    margin-left: 183px;
+    padding: 0;
+    min-width: 130px;
+    background-color: #D7D7D7;
+    
+}
+
+.social-list.social-list {
+    list-style: none;
+    margin:0; 
+    padding:0;  
+}
+
+.social-btn-item {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 12px;
+    padding: 0;   
+}
+
+.social-btn-item:last-of-type {
+    margin-right: 0px;
+}
+.social-btn {
+    display:inline-block;
+    padding: 0;
+    margin: 0;
+    width:20px;
+    height:20px;
+    background: url("/img/social-image.png") no-repeat;
+  
+}
+
+/* Позиционирование спрайта кнопок соцсетей */
+
+.btn-fb,
+.btn-fb:hover {
+    background-position: 0 0;
+}
+
+.btn-fb:hover {
+    background: url("/img/social-image-hover.png") no-repeat;
+}
+ 
+.btn-inst {
+    background-position: -35px 0px;
+}
+.btn-inst:hover {
+    background: url("/img/social-image-hover.png") no-repeat;
+    background-position: -35px 0px;
+}
+ 
+.btn-tw,
+.btn-tw:hover {
+    background-position: -70px 0px;
+}
+
+.btn-tw:hover {
+    background: url("/img/social-image-hover.png") no-repeat;
+    background-position: -70px 0px;
+}
+.btn-yb,
+.btn-yb:hover {
+    background-position: -105px 0px;
+}
+
+.btn-yb:hover {
+    background: url("/img/social-image-hover.png") no-repeat;
+    background-position: -105px 0px;
+}
+
+
+.footer-info {
+    width: 500px;
+    margin-top: 73px;
+    margin-left: 355px;
+    display: flex;
+    justify-content: space-between;
+    order: 5;
+    margin-left: auto;   
+}
+
+.footer-info-list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0 auto; 
+    padding: 0;
+}
+
+.footer-info-item {
+    margin-right: 20px;
+}
+
+.footer-info-item:last-of-type {
+    margin-right: 0px;
+}
+
+.footer-info-link:hover {
+    color: #3596F5;
 }
