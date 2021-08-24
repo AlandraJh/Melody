@@ -51,27 +51,28 @@ $(document).ready(function () {
         modalDialog.toggleClass("modal-dialog-show");
     }
 
-// // Подцветка карты квартир (доделать потом)
-// var currentFlat = 1 /*Переменная с текущей квартирой*/
-// var flatPath = $(".flat-image path"); /*Переменная подцветки квартир*/
-// var flatPathItem = $(".flat-link"); /*Ссылка на квартиру*/
+ // Подцветка карты квартир (доделать потом)
+ var currentFlat = 1 /*Переменная с текущей квартирой*/
+ var flatPath = $(".flat-image path"); /*Переменная подцветки квартир*/
+ var flatPathItem = $(".flat-link"); /*Ссылка на квартиру*/
 
 
-// /*События при наведении мыши на квартиру*/
-// flatPath.on("mouseover", function(){
-//     currentFlat = $(this).attr("data-flat"); /*Получение текушей квартиры*/
-//     flatPath.removeClass("current-flat"); /*Удаление активного класса */
-//     flatPathItem.removeClass("current-flat-item"); /*Удаление класса со ссылок с харектеристиками*/
-//     $(`[data-flat=${currentFlat}]`).toggleClass("current-flat"); /*Присвоение класса квартире*/
-//     $(`[data-flat=${currentFlat}]`).toggleClass("current-flat-item"); /*Присвоение класса*/
-// });
+ /*События при наведении мыши на квартиру*/
+ flatPath.on("mouseover", function(){
+    currentFlat = $(this).attr("data-flat"); /*Получение текушей квартиры*/
+    flatPath.removeClass("current-flat"); /*Удаление активного класса */
+    flatPathItem.removeClass("flat-link-active"); /*Удаление класса со ссылок с хактеристиками*/
+    $(`[data-flat=${currentFlat}]`).toggleClass("current-flat"); /*Присвоение класса подцветки квартире*/
+    $(`[data-flat-discip=${currentFlat}]`).toggleClass("flat-link-active"); /*Присвоение класса активации ссылкам с характеристиками*/
+   });
 
-//     /*События при наведении мыши на ссылки квартир */
-//     FlatLink.on("mouseover", function(){
-//         flatPath.removeClass("current-flat"); /*Удаление активного класса квартиры*/
-//         currentFlat = $(this).attr("data-flat");
-//         $(`[data-flat=${currentFlat}]`).toggleClass("current-flat"); /*Присвоение класса*/
+/*События при наведении мыши на ссылки квартир */
+    flatPathItem.on("mouseover", function(){
+        flatPath.removeClass("current-flat"); /*Удаление активного класса квартиры*/
+        flatPathItem.removeClass("flat-link-active"); /*Удаление класса со ссылок с хактеристиками*/    
+        currentFlatDiscip = $(this).attr("data-flat-discip"); /*Получение ссылки с описанием*/
+        $(`[data-flat=${currentFlatDiscip}]`).toggleClass("current-flat"); /*Присвоение класса квартире при наведении мыши*/
 
-//     });
+    });
 
 });
