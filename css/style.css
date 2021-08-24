@@ -276,9 +276,8 @@ path.current-flat {
     line-height: 19px;
     color: #635854;
 }
-
 .flat-link:hover,
-.flat-link.current-flat-item {
+.flat-link-active {
     color: #3596F5;
     text-decoration: underline;
     cursor: pointer;
