@@ -51,7 +51,7 @@ $(document).ready(function () {
         modalDialog.toggleClass("modal-dialog-show");
     }
 
- // Подцветка карты квартир (доделать потом)
+ // Подцветка карты квартир
  var currentFlat = 1 /*Переменная с текущей квартирой*/
  var flatPath = $(".flat-image path"); /*Переменная подцветки квартир*/
  var flatPathItem = $(".flat-link"); /*Ссылка на квартиру*/
