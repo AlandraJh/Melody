@@ -387,14 +387,14 @@ margin-top: 56px;
 }
 
 .btn-fb:hover {
-    background: url("/img/social-image-hover.png") no-repeat;
+    background: url("./img/social-image-hover.png") no-repeat;
 }
  
 .btn-inst {
     background-position: -35px 0px;
 }
 .btn-inst:hover {
-    background: url("/img/social-image-hover.png") no-repeat;
+    background: url("./img/social-image-hover.png") no-repeat;
     background-position: -35px 0px;
 }
  
@@ -404,7 +404,7 @@ margin-top: 56px;
 }
 
 .btn-tw:hover {
-    background: url("/img/social-image-hover.png") no-repeat;
+    background: url("./img/social-image-hover.png") no-repeat;
     background-position: -70px 0px;
 }
 .btn-yb,
@@ -413,7 +413,7 @@ margin-top: 56px;
 }
 
 .btn-yb:hover {
-    background: url("/img/social-image-hover.png") no-repeat;
+    background: url("./img/social-image-hover.png") no-repeat;
     background-position: -105px 0px;
 }
 
